@@ -23,7 +23,7 @@ PASSWORD=$(date +%s%N)
 echo "${PASSWORD}"
 
 
-# A better password
+# A better password to check for sha256sum list ls -l /usr/bin/*sum
 
 PASSWORD=$(date +%s%N | sha256sum | head -c32)
 echo "${PASSWORD}"
